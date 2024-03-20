@@ -39,10 +39,6 @@ docker-compose up -d
 Esto creará y ejecutará los contenedores para el backend, frontend y base de datos. Puedes acceder a la aplicación a través de tu navegador web visitando http://localhost:5175.
 4. Acceso a la Aplicación
 
-    Usuario Administrador:
-        Correo Electrónico: admin@example.com
-        Contraseña: admin123
-
 5. Detener la Aplicación
 
 Para detener los contenedores Docker y apagar la aplicación, ejecuta el siguiente comando en el directorio raíz del repositorio:
