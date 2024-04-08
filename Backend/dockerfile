@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk-alpine
+
+COPY target/molinic-0.0.1-SNAPSHOT.jar molinic_backend.jar
+ENTRYPOINT ["java", "-jar", "molinic_backend.jar"]
