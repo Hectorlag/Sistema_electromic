@@ -1,0 +1,251 @@
+/* ============================================ */
+/* 📁 assets/css/shared-form-styles.css */
+/* ============================================ */
+
+/* ============================================ */
+/* GRADIENTES GLOBALES */
+/* ============================================ */
+.gradient-custom-3 {
+  background: #84fab0;
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+}
+
+.gradient-custom-4 {
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+}
+
+/* ============================================ */
+/* TÍTULOS DE FORMULARIOS */
+/* ============================================ */
+.form-title {
+  text-align: center !important;
+  font-size: 20px !important;
+  margin-bottom: 12px !important;
+  margin-top: 5px !important;
+  color: #333 !important;
+  font-weight: 600 !important;
+}
+
+/* ============================================ */
+/* ESTRUCTURA DEL FORMULARIO */
+/* ============================================ */
+.form-content {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 20px !important;
+}
+
+.form-group {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  margin-bottom: 8px !important;
+}
+
+.form-group label {
+  width: 120px !important;
+  text-align: right !important;
+  margin-right: 15px !important;
+  font-weight: 500 !important;
+  color: #555 !important;
+}
+
+.form-group .form-control {
+  flex: 1 !important;
+  margin-left: 10px !important;
+  padding: 8px 12px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  font-size: 14px !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.form-group .form-control:focus {
+  outline: none !important;
+  border-color: #3498db !important;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2) !important;
+}
+
+/* ============================================ */
+/* BOTONES */
+/* ============================================ */
+.form-buttons {
+  padding: 8px 40px 8px 40px !important;
+  margin-bottom: 5px !important;
+}
+
+.btn {
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  width: 100% !important;
+  margin-bottom: 6px !important;
+  font-weight: 600 !important;
+}
+
+.btn.gradient-custom-4 {
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1)) !important;
+  color: #333 !important;
+  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4) !important;
+}
+
+.btn.gradient-custom-4:hover {
+  background: rgba(132, 250, 176, 0.8) !important;
+  transform: scale(0.98) !important;
+}
+
+.btn-secondary {
+  background: linear-gradient(to right, #6c757d, #5a6268) !important;
+  color: white !important;
+  box-shadow: 0 10px 30px 0 rgba(108, 117, 125, 0.4) !important;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(to right, #5a6268, #495057) !important;
+  transform: scale(0.98) !important;
+}
+
+/* ============================================ */
+/* MENSAJES */
+/* ============================================ */
+.form-message {
+  text-align: center !important;
+  margin-top: 5px !important;
+  padding: 6px !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+}
+
+.form-error {
+  color: #e74c3c !important;
+  background-color: #fdf2f2 !important;
+  border: 1px solid #f5c6cb !important;
+}
+
+.form-success {
+  color: #155724 !important;
+  background-color: #d4edda !important;
+  border: 1px solid #c3e6cb !important;
+}
+
+/* ============================================ */
+/* CAMPOS ESPECIALES */
+/* ============================================ */
+.form-group select.form-control {
+  cursor: pointer !important;
+}
+
+.form-group textarea.form-control {
+  min-height: 80px !important;
+  resize: vertical !important;
+}
+
+/* Radio buttons y checkboxes */
+.form-check-group {
+  display: flex !important;
+  gap: 20px !important;
+  align-items: center !important;
+}
+
+.form-check-inline {
+  margin-right: 20px !important;
+}
+
+/* ============================================ */
+/* RESPONSIVE PARA FORMULARIOS */
+/* ============================================ */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .form-group label {
+    width: auto !important;
+    text-align: left !important;
+    margin-right: 0 !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .form-group .form-control {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  .form-title {
+    font-size: 18px !important;
+  }
+  
+  .form-buttons {
+    padding: 15px 15px 8px 15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 16px !important;
+  }
+  
+  .form-buttons {
+    padding: 10px 8px 8px 8px !important;
+  }
+}
+
+/* ============================================ */
+/* ESTILOS ESPECÍFICOS PARA TABLAS (PRESUPUESTOS) */
+/* ============================================ */
+.form-table {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+.form-table td {
+  padding: 6px !important;
+  vertical-align: middle !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.form-table .form-label {
+  font-weight: 500 !important;
+  color: #555 !important;
+  text-align: right !important;
+  width: 140px !important;
+}
+
+.form-table .form-control {
+  width: 100% !important;
+  padding: 6px 10px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  font-size: 13px !important;
+}
+
+/* ============================================ */
+/* UTILIDADES */
+/* ============================================ */
+.text-center {
+  text-align: center !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
